@@ -1,0 +1,90 @@
+/* Manechat CSS
+   By: DeltaPHC */
+
+body {
+	background-color: #36393e;
+	color: #f0f0f0;
+	background-image: url('rdsalute_bg.png');
+	background-attachment: fixed;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: #6c8bd7;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #7c9be7;
+	text-decoration: underline;
+}
+
+ol li {
+	margin: 0 0 1rem 0;
+	padding-left: 1rem;
+}
+
+.channel_name {
+	background-color: #3c414d;
+	color: #6c8bd7;
+}
+
+article.mane_content {
+	background-color: #46494e;
+	padding: 1rem;
+	opacity: 0.90;
+	clear: both;
+	display: none;
+}
+
+article.article_shown {
+	display: block !important;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #26292e;
+	overflow: hidden;
+}
+
+nav ul li {
+	margin: 0 1rem 0 0;
+	padding: 0.5rem;
+	float: left;
+}
+
+nav ul li:hover {
+	background-color: #303030;
+	cursor: pointer;
+}
+
+li.nav_selected {
+	background-color: #404040;
+}
+
+li#nav_rules {
+	background-image: url('fluttersrs.png');
+	background-repeat: no-repeat;
+	background-position: 8px bottom;
+	background-size: 56px 56px;
+}
+
+li#nav_bpm {
+	background-image: url('scootacheer.png');
+	background-repeat: no-repeat;
+	background-position: 8px bottom;
+	background-size: 56px 56px;
+}
+
+nav ul li p, nav ul li h3 {
+	margin: 0 0 0 64px;
+	padding: 0;
+}
+
+footer {
+	font-size: 0.75rem;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Manechat Discord Server</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="mane.css">
+	<script type="text/javascript">
+		var selected_nav = "rules";
+
+		function selectNav(name) {
+			var selected = document.getElementById("nav_" + selected_nav);
+			selected.classList.remove("nav_selected");
+
+			var selected_article = document.getElementById(selected_nav);
+			selected_article.classList.remove("article_shown");
+
+			var nav_elem = document.getElementById("nav_" + name);
+			nav_elem.classList.add("nav_selected");
+
+			var article = document.getElementById(name);
+			article.classList.add("article_shown");
+
+			selected_nav = name;
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<h1>Manechat</h1>
+		<h2>Unofficial /r/MyLittlePony Discord Server</h2>
+		<nav>
+			<ul>
+				<li id="nav_rules" class="nav_selected" onclick="selectNav('rules');"><h3>Rules</h3><p>Find out what fun isn't allowed.</p></li>
+				<li id="nav_bpm" onclick="selectNav('bpm');"><h3>BPM</h3><p>Get ponymotes in Discord!</p></li>
+			</ul>
+		</nav>
+	</header>
+
+	<article id="rules" class="mane_content article_shown">
+		<p>The chat follows a certain set of rules that we expect participants to adhere to. Breaking the rules may result in a kick or ban.</p>
+		 
+			<p>Fundamentally, the same rules that apply in the /r/MyLittlePony subreddit also apply to the chat server unless explicitly stated otherwise.</p>
+		 
+			<p><strong>Keep in mind</strong> that there are multiple channels on the server. Certain channels are to be used for certain things. Read rule 8 for details.</p>
+		 
+			<p>There is a SPOILER channel dedicated to spoiler and new episode discussion for MLP/EqG/the comics. The rules also apply there, the ONLY exception being the spoiler rule (Rule 2). Improper placement of MLP spoiler content outside of <span class="channel_name">#mylittlespoilers</span> is strictly prohibited and may result in moderator action.</p>
+
+			<ol> 
+				<li>No offensive/nsfw avatars, pictures, or topics. This includes NSFW emotes.
+					<ol type="a">
+						<li>Absolutely ZERO NSFW roleplays are allowed in the RP channel. Romantic fluff is fine as long as it's kept family friendly. (Think E rating on FimFiction) If you need access to a NSFW channel, contact a Discord chat moderator and request an invite. Note that invites for a NSFW channel are not always open.</li>
+					</ol>
+				</li>
+		 
+				<li>Spoiler rules apply. No spoilers for 48 hours after a new episode airs, nor publicly linking to leaked content. All of this must be kept in the relevant spoilers channel, <span class="channel_name">#mylittlespoilers</span></li>
+		 
+				<li>Spamming and shitposting in the server don't contribute to the discussion and are therefore strictly prohibited.<br>
+		NOTE: We strictly prohibit the unwarranted use of excessively large emotes as they're spammy in nature. Emotes larger than approximately four times the size of /r/mylittlepony's emotes are strictly prohibited. Anything in between is to be used with moderation and must serve a real purpose in the discussion.</li>
+		 
+				<li>Be pony-like and kind to other members. We're here to have a good time, not to get harassed. (Inside jokes are okay with moderation, but be reasonable. There are limits to how far things can go. Be courteous of others.)
+					<ol type="a">
+						<li>By extension of rule 4, the voice chat requires all participants to enable Discord's Push To Talk functionality. Be respectful of other users in the voice chat; if someone is talking, use common sense and don't interrupt them. This is to reduce unnecessary and disruptive noise in the channel when several people are using it at once. Voice Activity mode works fine as an alternative, but ONLY if you properly configure it to filter out keyboard typing and white noise. Else we will ask you to switch to PTT.</li>
+					</ol>
+				</li>
+		 
+				<li>Bots and the use of bots in the Discord server are strictly prohibited and are subject to immediate removal from the server without prior warning. Sweetie Bot, created and operated by the moderation staff, is the only exception to this rule.</li>
+		 
+				<li>Abusing any aspect of the chat and/or its systems, such as pinging users, emotes, invites, etc. can be considered grounds for a ban.</li>
+		 
+				<li>Respect <a href="https://discordapp.com/tos">Discord's Terms of Service</a>. Violations can lead to users being banned and reported to Discord.</li>
+		 
+				<li>Certain channels are to be used for certain activities and discussions. <strong>DO NOT</strong> clutter the general chat with content that belongs somewhere else, unless it happens to be topical (e.g. everyone in mane chat starts talking about computers). The purposes of each channel are as follows:<br>
+					<table>
+						<tr> <td><span class="channel_name">#manechat</span></td> <td>General discussion.</td> </tr>
+			    		<tr> <td><span class="channel_name">#mylittlespoilers</span></td> <td>Spoilers channel to discuss embargoed topics such as new MLP/EqG/comic content and other new media.</td> </tr>
+			    		<tr> <td><span class="channel_name">#mylittleactivities</span></td> <td>Chat here for gaming, Fanfic Reading reactions or TSSSF communication.</td> </tr>
+			    		<tr> <td><span class="channel_name">#mylittleroleplay</span></td> <td>This is a SFW RP channel. NSFW is strictly prohibited.</td> </tr>
+			    		<tr> <td><span class="channel_name">#mylittlecoders</span></td> <td>Technical discussions on computer science and software development as well as the latest tech and similar.</td> </tr>
+		    		</table>
+				</li>
+			</ol>
+	</article>
+	
+	<article id="bpm" class="mane_content">
+		<strong>For the Discord WEB CLIENT:</strong>
+		<ul>
+			<li>Install the BPM extension from the <a href="https://ponymotes.net/bpm/">official website</a>, if you do not have it already.</li>
+			<li>For it to show onto the web client, follow the guide on <a href="https://goo.gl/ru3LZ7">this gif</a> or see below for the written instructions.
+			<ol>
+				<li>Go to Settings of your web browser.</li>
+				<li>Go to the Extensions tab.</li>
+				<li>Click options under the BPM extension.</li>
+				<li>Scroll down and check the boxes that 'Convert emotes outside of Reddit' and 'Show the emote search globally'.</li>
+  			</ol>
+  			</li>
+  		</ul>
+		<strong>For the Discord DESKTOP CLIENT:</strong>
+		<ul>
+			<li>Download and extract <a href="https://goo.gl/nj1If2">this zip file</a>, which contains the BPM mod for Discord.</li>
+			<li>For instructions on how to install the mod, follow the guide shown on <a href="https://goo.gl/2I2R1B">this gif</a> or simply unzip the pack and read the README provided.</li>
+		</ul>
+	</article>
+	
+	<footer>
+		<p>Last updated: January 28, 2016</p>
+		<p>Design by: DeltaPHC</p>
+	</footer>
+</body>
+</html>
