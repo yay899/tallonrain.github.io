@@ -91,14 +91,9 @@ footer {
 
 .button {
   display: inline-block;
-  background: #477286;
   margin: 0 0 1em 0;
   text-shadow: 1px 1px #666;
   border-radius: 0.4em;
-  border-left: 1px solid #6E91A1;
-  border-top: 1px solid #6E91A1;
-  border-bottom: 1px solid #113C51;
-  border-right: 1px solid #113C51;
   box-shadow: 0px 2px 5px #222;
   padding: 0.5em;
   transition: all 300ms;
@@ -106,12 +101,10 @@ footer {
 
 .button:hover {
   box-shadow: 0px 2px 10px #111;
-  background: #608090;
   
 }
 .button:active {
   box-shadow: 0px 2px 10px #111;
-  background: #27556C;
   transition: all 30ms;
 }
 
@@ -120,4 +113,34 @@ footer {
   color: #FFFFFF;
   text-decoration: none;
   font-weight: 900;
+}
+
+.blue {
+  background: #477286;
+  border-left: 1px solid #6E91A1;
+  border-top: 1px solid #6E91A1;
+  border-bottom: 1px solid #113C51;
+  border-right: 1px solid #113C51;
+}
+.blue:hover {
+  background: #608090;
+}
+.blue:active {
+  background: #27556C;
+}
+.green {
+  background: #47A662;
+  border-left: 1px solid #6EA181;
+  border-top: 1px solid #6EA181;
+  border-bottom: 1px solid #11612C;
+  border-right: 1px solid #11612C;
+}
+.button a:hover {
+	text-decoration: underline;
+}
+.green:hover {
+  background: #50B070;
+}
+.green:active {
+  background: #279C55;
 }
