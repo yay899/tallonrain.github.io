@@ -9,27 +9,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Manechat Discord Server</title>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="mane.css">
-	<script type="text/javascript">
-		var selected_nav = "rules";
-
-		function selectNav(name) {
-			var selected = document.getElementById("nav_" + selected_nav);
-			selected.classList.remove("nav_selected");
-
-			var selected_article = document.getElementById(selected_nav);
-			selected_article.classList.remove("article_shown");
-
-			var nav_elem = document.getElementById("nav_" + name);
-			nav_elem.classList.add("nav_selected");
-
-			var article = document.getElementById(name);
-			article.classList.add("article_shown");
-
-			selected_nav = name;
-		}
-	</script>
 	<script type="text/javascript">
 		document.addEventListener('DOMContentLoaded', function() {
 			var releasesUrl = 'https://api.github.com/repos/ByzantineFailure/BPM-for-Discord/releases';
@@ -64,22 +47,31 @@
 	</script>
 </head>
 <body>
-	<header>
+	<nav>
+		<ul>
+			<li id="nav_home"><a href="#home"><i class="material-icons">navigation</i> <p>Home</p></a></li>
+			<li id="nav_rules"><a href="#rules"><i class="material-icons">announcement</i> <p>Rules</p></a></li>
+			<li id="nav_talk"><a href="#talk"><i class="material-icons">comment</i> <p>Talk</p></a></li>
+			<li id="nav_bpm"><a href="#bpm"><i class="material-icons">info_outline</i> <p>BPM</p></a></li>
+			<li id="nav_sb"><a href="#sb"><i class="material-icons">code</i> <p>Sweetiebot</p></a></li>
+			<li id="nav_bronycon"><a href="#bronycon"><i class="material-icons">new_releases</i> <p>Bronycon</p></a></li>
+		</ul>
+	</nav>
+	<header id="home">
+		<article>
+		<img src="karma.jpeg"></img>
+		<div class="discordlogo"></div>
 		<h1>Manechat</h1>
-		<h2>Unofficial /r/MyLittlePony Discord Server</h2>
-		<div class="button green"><a href="https://discord.gg/ZQZKRan">Click Here to Join our Discord Server!</a></div>
+		<h2>My Little Pony Discord Server</h2>
+		</article>
 		<br/>
-        <div class="button blue"><a href="https://github.com/ByzantineFailure/BPM-for-Discord/releases/latest">Get the Latest BPM Plugin for Discord</a></div>
-		<nav>
-			<ul>
-				<li id="nav_rules" class="nav_selected" onclick="selectNav('rules');"><h3>Rules</h3><p>Find out what fun isn't allowed.</p></li>
-				<li id="nav_bpm" onclick="selectNav('bpm');"><h3>BPM Plugin</h3><p>Get ponymotes in Discord!</p></li>
-			</ul>
-		</nav>
+		<div class="button green"><a href="https://discord.gg/ZQZKRan">Click Here to Join!</a></div>
+        <div class="button blue"><a href="https://github.com/ByzantineFailure/BPM-for-Discord/releases/latest">Get the Latest BPM Plugin</a></div>
 	</header>
 
-	<article id="rules" class="mane_content article_shown">
-        
+	<section id="rules">
+		<article>
+		<h1>Rules</h1>
         <p>Manechat follows a certain set of rules that we expect participants to follow. Breaking the rules may result in being muted, kicked, or banned from the server.</p>
 		 
 		<p>Fundamentally, the same rules that apply in the /r/MyLittlePony subreddit also apply to Manechat.</p>
@@ -124,10 +116,21 @@
             </p>
             
         </ol>
-	</article>
+		</article>
+	</section>
 	
-	<article id="bpm" class="mane_content">
-		<strong>For the Discord WEB CLIENT:</strong>
+	<section id="talk">
+	<article>
+	<h2>Chat on the Web!</H2>
+	<iframe src="https://discordapp.com/widget?id=98609319519453184&theme=dark" width="100%" height="500" style="max-width:650px;margin-bottom:1em;" allowtransparency="true" frameborder="0"></iframe>
+	</article>
+	</section>
+	
+	<section id="bpm">
+		<article>
+		<h1>BetterPonyMotes for Discord</h1>
+		<img src="scootacheer.png" alt="" style="float:left;margin-right:1em;" />Get ponymotes in Discord! If you are on either the discord <b>web client</b> or the discord <b>desktop client</b> (on Windows, Mac, or Linux), follow the instructions for your platform below to embed ponymotes right in discord itself! If you are using the discord <b>android app</b> or the discord <b>iOS app</b>, there currently is no way to get ponymotes working on those platforms. Sorry!
+		<h2>Web Client</h2>
 		<ul>
 			<li>Install the BPM extension from the <a href="https://ponymotes.net/bpm/">official website</a>, if you do not have it already.</li>
 			<li>For ponymotes to show in the web (Browser) client of Discord, follow the visual guide shown on <a href="https://goo.gl/ru3LZ7">this gif</a> or see below for the written instructions.
@@ -139,17 +142,41 @@
   			</ol>
   			</li>
   		</ul>
-		<strong>For the Discord DESKTOP CLIENT:</strong>
+		<h2>Desktop Client</h2>
 		<ul>
 			<li>Download and extract <a id="discord-for-bpm-link" href="https://github.com/ByzantineFailure/BPM-for-Discord/releases/latest">this 7zip archive (bottom of the page)</a>, which contains the BPM mod for Discord.</li>
 			<li>For instructions on how to install the mod, follow the visual guide shown on <a href="https://goo.gl/2I2R1B">this gif</a> or simply unzip the pack and read the README provided.</li>
 		</ul>
-        <p>If you followed these instructions but still need further assistance, feel free to ask members of the Manechat.</p>
+        <p>If you followed these instructions but still need further assistance, feel free to ask members of the server.</p>
+		</article>
+	</section>
+	
+	<section id="sb">
+	<article>
+	<span>
+	<img src="sb.png" alt="Avatar" title="Sweetie Bot" style="height:180px;width:180px;" />
+	<h1>Sweetie <span>bot</span></h1>
+	<div class="pad">An open source administration bot for the Manechat discord channel, now available for your own server!
+	<br/>
+	<div class="button cyan"><a href="https://discordapp.com/oauth2/authorize?client_id=171790139712864257&scope=bot&permissions=0">Add To Server</a></div>
+	<div class="button blue" style="background: #477286 url('github.png') 5px 5px no-repeat;padding-left:35px;"><a href="https://github.com/blackhole12/sweetiebot#readme">View Readme</a></div>
+	</div>
+	</span>
 	</article>
+	</section>
+	
+	<section id="bronycon">
+	<article>
+	<img src="bc16panelist.png" class="stamp" alt="Bronycon Panelist" />
+	<h1>Manechat @ Bronycon!</h1>
+	<p>Cloud Hop and PotluckPony will be hosting <a href="http://bronycon.org/events/schedule/">Creating and Moderating Online Communities</a> at BronyCon 2016!</p>
+	<p>Many members of our chat plan to be there, so come check us out on <a href="http://bronycon.org/events/schedule/">Sunday at 1:00 PM</a> in the Hall of the Stars!</p>
+	</article>
+	</section>
 	
 	<footer>
-		<p>Last updated: 27 June, 2016</p>
-		<p>Design by: DeltaPHC</p>
+		<p>Last updated: July 6, 2016</p>
+		<p>Design by: <a href="https://github.com/blackhole12/">Cloud Hop</a>, DeltaPHC</p>
         <p>Maintained by: Midnight Aegis (aka TallonRain)</p>
 	</footer>
 </body>
