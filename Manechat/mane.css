@@ -140,6 +140,7 @@ section article {
 	max-width: 1024px;
 }
 #bpm {
+  overflow: hidden;
 }
 #bpm h1 {
 	margin: 0.35em 0 0.25em 0;
@@ -286,6 +287,9 @@ footer {
 
 .stamp { position: absolute; top: 45px; right: 10px; transform: rotate(30deg); height: 125px; width: auto; }
 
+#bpm article h1 .small {
+  display: none;
+}
 @media (max-width: 1500px) {
 body {
 	background-image: none;
@@ -345,4 +349,10 @@ body {
   	.stamp {
 		top: 10rem;
 	}
+#bpm article h1 .small {
+  display: inline;
+}
+#bpm article h1 .large {
+  display: none;
+}
 }
