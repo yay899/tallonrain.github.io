@@ -196,6 +196,7 @@ section article {
 }
 #bronycon {
 	background: #5A3791;
+  overflow: hidden;
 }
 #bronycon article {
 	position: relative;
