@@ -4,9 +4,92 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
 body {
+	margin-top: 4rem;
 	background-color: #303030;
 	color: #f0f0f0;
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+nav {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 3rem;
+	line-height: 2rem;
+	border-bottom: 1px solid #505050;
+	background-color: #4a4a4a;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	line-height: 3rem;
+	height: 3rem;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+nav ul li {
+	margin: 0;
+	padding: 0 0.5rem 0 0.5rem;
+	float: left;
+	line-height: 3rem;
+	height: 3rem;
+}
+
+nav ul li:hover {
+	background-color: #505050;
+	cursor: pointer;
+}
+
+nav ul li ul {
+	display: none;
+}
+
+nav ul li:hover ul {
+	display: block;
+	margin: 0 0 0 -0.5rem;
+	padding: 0;
+	background-color: #4a4a4a;
+	position: absolute;
+	width: 400px;
+	height: auto;
+	list-style-type: none;
+	border: 1px solid #505050;
+}
+
+nav ul li:hover ul li {
+	float: none;
+	display: block;
+	line-height: 1rem;
+	height: auto;
+	margin: 0;
+	padding: 0.5rem;
+}
+
+nav li#navlogo {
+	line-height: 2.5rem;
+}
+
+nav li#navlogo span {
+	margin: 0;
+	padding: 0.5rem;
+	font-size: 2rem;
+}
+
+nav li#navlogo .yellowback {
+	background-color: #F1E8AF;
+	color: #303030;
+}
+
+nav li#navlogo .blueback {
+	background-color: #95DBFF;
+	color: #303030;
+}
+
+nav li#navlogo .greyback {
+	background-color: #404040;
 }
 
 footer {
