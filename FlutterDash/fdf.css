@@ -73,6 +73,11 @@ nav li#navlogo {
 	line-height: 2.5rem;
 }
 
+nav li#navlogo a, nav li#navlogo a:hover {
+	text-decoration: none;
+	color: #f0f0f0;
+}
+
 nav li#navlogo span {
 	margin: 0;
 	padding: 0.5rem;
