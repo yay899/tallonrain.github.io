@@ -11,6 +11,7 @@ body {
 }
 
 nav {
+	backface-visibility: hidden; /* Speed hack; forces separate compositing layer */
 	position: fixed;
 	left: 0;
 	top: 0;
