@@ -4,22 +4,35 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
 body {
-	margin-top: 4rem;
+	margin: 0;
+	padding: 0;
 	background-color: #303030;
 	color: #f0f0f0;
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
+section#content {
+	margin: 0;
+	padding: 0.5rem;
+	position: fixed;
+	left: 0;
+	top: 3rem;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	backface-visibility: hidden; /* Boosts scroll performance on slower machines */
+}
+
 nav {
-	backface-visibility: hidden; /* Speed hack; forces separate compositing layer */
 	position: fixed;
 	left: 0;
 	top: 0;
 	right: 0;
 	height: 3rem;
-	line-height: 2rem;
+	line-height: 3rem;
 	border-bottom: 1px solid #505050;
 	background-color: #4a4a4a;
+	z-index: 9999;
 }
 
 nav ul {
@@ -70,7 +83,7 @@ nav ul li:hover ul li {
 }
 
 nav li#navlogo {
-	line-height: 2.5rem;
+	line-height: 3rem;
 }
 
 nav li#navlogo a, nav li#navlogo a:hover {
